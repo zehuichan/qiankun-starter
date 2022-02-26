@@ -1,12 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+import router from './router'
+
 /**
  * Step1 初始化应用（可选）
  */
 Vue.config.productionTip = false
 
 new Vue({
+	router,
 	render: h => h(App),
 }).$mount('#mainapp')
 
@@ -44,7 +47,7 @@ registerMicroApps(
 )
 
 /**
- * Step3 设置默认进入的子应用
+ * Step3 设置默认进入的主、子应用
  */
 setDefaultMountApp('/vue/')
 
