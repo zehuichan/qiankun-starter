@@ -1,8 +1,3 @@
-/**
- *
- * @param {vuex实例} store
- * @param {qiankun下发的props} props
- */
 function registerGlobalModule(store, props = {}) {
 
 	if (!store || !store.hasModule) {
@@ -41,8 +36,8 @@ function registerGlobalModule(store, props = {}) {
 					if (props.setGlobalState) {
 						props.setGlobalState(state)
 					}
-				},
-			},
+				}
+			}
 		}
 		store.registerModule('global', globalModule)
 	} else {

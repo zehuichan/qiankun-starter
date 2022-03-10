@@ -8,12 +8,11 @@
     "install:main": "cd main && npm i",
     "install:ums": "cd ums && npm i",
     "start": "npm-run-all --parallel start:*",
-    "start:main": "cd main && npm start",
-    "start:ums": "cd ums && npm start",
+    "start:main": "cd main && npm run serve",
+    "start:ums": "cd ums && npm run serve",
     "build": "npm-run-all build:* && bash ./scripts/bundle.sh",
     "build:main": "cd main && npm run build",
     "build:ums": "cd main && npm run build"
-
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
   },
   "homepage": "https://github.com/zehuichan/qiankun-starter#readme",
   "devDependencies": {
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "shelljs": "^0.8.5"
   }
 }

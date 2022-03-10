@@ -2,9 +2,10 @@ import store from './store'
 
 const microApps = [
 	{
+		name: 'ums',
 		entry: '//localhost:7101',
 		container: '#subapp-viewport',
-		activeRule: '/vue/',
+		activeRule: '/ums/',
 	}
 ]
 
