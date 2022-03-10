@@ -15,7 +15,6 @@ module.exports = {
 	 * In most cases please use '/' !!!
 	 * Detail: https://cli.vuejs.org/config/#publicpath
 	 */
-	publicPath: `/module/${name}`, // /module/pms
 	outputDir: 'dist',
 	assetsDir: 'static',
 	filenameHashing: true,
@@ -32,9 +31,6 @@ module.exports = {
 		},
 		headers: {
 			'Access-Control-Allow-Origin': '*',
-			'Cache-Control': 'no-cache',
-			Pragma: 'no-cache',
-			Expires: 0
 		},
 	},
 	// 自定义webpack配置
@@ -51,5 +47,4 @@ module.exports = {
 			jsonpFunction: `webpackJsonp_${name}`,
 		},
 	},
-	transpileDependencies: ['common']
 }
